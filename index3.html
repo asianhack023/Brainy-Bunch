@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+        body {
+            background-color: #36393f;
+            color: #f8f8f8;
+            font-family: sans-serif;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #2f3136;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .sidebar-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-header .icon {
+            font-size: 24px;
+        }
+
+        .sidebar-header .title {
+            margin-left: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .sidebar-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .sidebar-menu .item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar-menu .item:hover {
+            background-color: #36393f;
+        }
+
+        .sidebar-menu .item .icon {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        .sidebar-menu .item .text {
+            font-weight: bold;
+        }
+
+        .main {
+            width: calc(100% - 250px);
+            height: 100vh;
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .header .search {
+            background-color: #40444b;
+            border-radius: 4px;
+            padding: 8px 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header .search input {
+            background-color: transparent;
+            color: #f8f8f8;
+            border: none;
+            padding: 0 8px;
+        }
+
+        .header .search input:focus {
+            outline: none;
+        }
+
+        .header .search .icon {
+            font-size: 16px;
+            color: #f8f8f8;
+            margin-right: 8px;
+        }
+
+        .content {
+            background-color: #40444b;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .channel {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #4b5057;
+            border-radius: 4px;
+        }
+
+        .channel .title {
+            font-weight: bold;
+        }
+
+        .channel .actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .channel .actions .icon {
+            font-size: 16px;
+            color: #f8f8f8;
+            cursor: pointer;
+        }
+
+        .messages {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .message {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .message .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #4b5057;
+            margin-right: 10px;
+        }
+
+        .message .text {
+            background-color: #54575b;
+            padding: 10px;
+            border-radius: 4px;
+            word-break: break-word;
+        }
+
+        .message .time {
+            color: #949494;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        .input-area {
+            background-color: #4b5057;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        .input-area textarea {
+            background-color: transparent;
+            color: #f8f8f8;
+            border: none;
+            resize: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .input-area textarea:focus {
+            outline: none;
+        }
+
+        .input-area .actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .input-area .actions .icon {
+            font-size: 16px;
+            color: #f8f8f8;
+            cursor: pointer;
+        }
+        .text{
+            color: #fff;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div class="title">ASIAN SCHOOL OF MANAGEMENT AND TECHNOLOGY</div>
+        </div>
+        <div class="sidebar-menu">
+            <div class="item">
+                <div class="icon">🏠</div>
+                <div class="text">Home</div>
+            </div>
+            <div class="item">
+                <div class="icon">📅</div>
+                <div class="text"><a href="academic-calendar747.pdf" style="color: white;">calender</a></div>
+            </div>
+            <div class="item">
+                <div class="icon">🔔</div>
+                <div class="text">Notice Board</div>
+            </div>
+            <div class="item">
+                <div class="icon">📄</div>
+                <div class="text">result</a></div>
+            </div>
+            <div class="item">
+                <div class="icon">🔎</div>
+                <div class="text"><a href="almuni.html" style="color: white;">Almuni</a></div>
+            </div>
+            <div class="item">
+                <div class="text">📒</div>
+                    <div class="icon"><a href="csit.html" style="color: white;">Notes</a></div>
+            </div>
+            <div class="item">
+                <div class="icon">▶</div>
+                <div class="text"><a href="csit.html" style="color: white;">Direct messages</a></div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="main">
+        <div class="header">
+            <div class="search">
+                <input type="text" placeholder="Search Asian_Hack_2024">
+                <div class="icon">🔍</div>
+            </div>
+            <div class="actions">
+                <div class="icon">💡</div>
+                <div class="icon">🎧</div>
+                <div class="icon">+</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="channel">
+                <div class="title">home</div>
+                <div class="actions">
+                    <div class="icon">📌</div>
+                    <div class="icon">⬇️</div>
+                </div>
+            </div>
+            <div class="messages">
+                <div class="message">
+                    <div class="avatar"></div>
+                    <div class="text">
+                       hello!
+                        <div class="time">3:12 PM</div>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="avatar"></div>
+                    <div class="text">
+                        can you help me in this topic
+                        <div class="time">3:13 PM</div>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="avatar"></div>
+                    <div class="text">
+                        I'm here to help...
+                        <div class="time">3:13 PM</div>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="avatar"></div>
+                    <div class="text">
+                        which batch ?
+                        <div class="time">3:14 PM</div>
+                    </div>
+                </div>
+            </div>
+            <div class="input-area">
+                <textarea placeholder="Message #general"></textarea>
+                <div class="actions">
+                    <div class="icon">Aa</div>
+                    <div class="icon">😊</div>
+                    <div class="icon">@</div>
+                    <div class="icon">🎥</div>
+                    <div class="icon">🎤</div>
+                    <div class="icon">📝</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

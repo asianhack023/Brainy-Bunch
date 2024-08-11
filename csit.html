@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: #ffffff;
+            border: 2px solid #4b4d4e;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .child {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            gap: 15px;
+        }
+
+        .semester-link {
+            background-color: #11161b;
+            color: white;
+            height: 50px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .semester-link:hover {
+            background-color: #61aee6;
+            transform: scale(1.05);
+        }
+
+        .semester-link:active {
+            background-color: #26292b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="child">
+            <a href="content1.html" class="semester-link">First Semester</a>
+            <a href="content2.html" class="semester-link">Second Semester</a>
+            <a href="content3.html" class="semester-link">Third Semester</a>
+            <a href="content4.html" class="semester-link">Fourth Semester</a>
+            <a href="content5.html" class="semester-link">Fifth Semester</a>
+            <a href="content6.html" class="semester-link">Sixth Semester</a>
+            <a href="content7.html" class="semester-link">Seventh Semester</a>
+            <a href="content8.html" class="semester-link">Eighth Semester</a>
+        </div>
+    </div>
+</body>
+
+</html>
